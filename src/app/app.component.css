@@ -1,16 +1,32 @@
+
 .container {
-  height: 600px;
+  height: 700px;
   width: 600px;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  background-color: #b8c2ce;
+  background-color: #5289cc;
+  
 }
 div {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 mat-form-field {
-  width: 100%;
+  width: 90%;
+  align-items: center;
+  background-color: mediumslateblue;
+  margin-left: 20px;
 }
+.button{
+  margin-left: 40%;
+  margin-top: 40px;;
+}
+mat-radio-group{
+  margin-left:20px;
+}
+p{
+  color: aliceblue;
+}
+

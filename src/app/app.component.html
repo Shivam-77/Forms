@@ -1,20 +1,22 @@
 
+  
+ 
   <form action="" [formGroup]="infoForm" (ngSubmit)="onSubmit()" class="container">
-    <div>
-      <mat-form-field>
+    <div class="name" >
+      <mat-form-field style="margin-top: 20px;">
         <mat-label>Name</mat-label>
         <input matInput formControlName="name" />
       </mat-form-field>
     </div>
-    <div>
-      <label >Gender </label>
+    <div class="gender">
+      <label style="margin-left: 20px;">Gender </label>
       <mat-radio-group formControlName="gender">
         <mat-radio-button value="male" >Male</mat-radio-button>
         <mat-radio-button value="female">Female</mat-radio-button> 
       </mat-radio-group>
     </div>
-    <div>
-      <mat-form-field>
+    <div class="country">
+      <mat-form-field >
         <mat-label>Country</mat-label>
         <select matNativeControl required formControlName="country">
           <option value="india">India</option>
@@ -24,7 +26,7 @@
         </select>
       </mat-form-field>
     </div>
-    <div>
+    <div class="dob">
       <mat-form-field>
         <mat-label>Date Of Birth</mat-label>
         <input matInput [matDatepicker]="picker"[max]="maxDate" formControlName="doB">
@@ -33,7 +35,7 @@
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
     </div>
-    <div>
+    <div class="email">
       <mat-form-field>
         <mat-label>Email</mat-label>
         <input matInput
@@ -46,7 +48,7 @@
         }
       </mat-form-field>
     </div>
-    <div>
+    <div class="contact">
       <mat-form-field>
         <mat-label>Contact No</mat-label>
         <input matInput
@@ -59,11 +61,13 @@
         }
       </mat-form-field>
     </div>
-    <div>
-      <mat-checkbox formControlName="declaration" (click)="onCheck()"><p >I  consent that above information provided by me is correct.</p></mat-checkbox>
+    <div class="checkBox">
+      <mat-checkbox formControlName="declaration" (click)="onCheck()"><p>I  consent that above information provided by me is correct.</p></mat-checkbox>
     </div>
-    <div>
-      <button mat-flat-button formcontrolName="submit" color="accent" (click)="onSubmit()" [disabled]="!declarationCheck">Submit</button>
+    <div class="button">
+      <button mat-flat-button formcontrolName="submit" color="accent" (click)="onSubmit()" [disabled]="!declarationCheck" >Submit</button>
     </div>
   </form>
+
+
 
