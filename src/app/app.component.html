@@ -1,6 +1,5 @@
 
   
- 
   <form action="" [formGroup]="infoForm" (ngSubmit)="onSubmit()" class="container">
     <div class="name" >
       <mat-form-field style="margin-top: 20px;">
@@ -9,16 +8,16 @@
       </mat-form-field>
     </div>
     <div class="gender">
-      <label style="margin-left: 20px;">Gender </label>
+      <label style="margin-left: 20px; font-size: 17px;">Gender </label>
       <mat-radio-group formControlName="gender">
-        <mat-radio-button value="male" >Male</mat-radio-button>
-        <mat-radio-button value="female">Female</mat-radio-button> 
+        <mat-radio-button value="male"> <span >Male</span> </mat-radio-button>
+        <mat-radio-button value="female"><span>Female</span></mat-radio-button> 
       </mat-radio-group>
     </div>
     <div class="country">
       <mat-form-field >
         <mat-label>Country</mat-label>
-        <select matNativeControl required formControlName="country">
+        <select matNativeControl required formControlName="country" >
           <option value="india">India</option>
           <option value="australia">Australia</option>
           <option value="unitesStates">Unites States</option>
@@ -31,7 +30,7 @@
         <mat-label>Date Of Birth</mat-label>
         <input matInput [matDatepicker]="picker"[max]="maxDate" formControlName="doB">
         <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker-toggle matIconSuffix [for]="picker" style="color: rgb(255, 0, 212);"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
     </div>
@@ -68,6 +67,7 @@
       <button mat-flat-button formcontrolName="submit" color="accent" (click)="onSubmit()" [disabled]="!declarationCheck" >Submit</button>
     </div>
   </form>
+  
 
 
 

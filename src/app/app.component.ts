@@ -77,10 +77,8 @@ export class AppComponent {
     else this.errorMessage = '';
   }
   errorContact() {
-    if (this.infoForm.get('contactNo')?.hasError('required'))
-      this.errorMessageContact = 'You must enter a value';
-    else if (this.infoForm.get('contactNo')?.invalid)
-      this.errorMessageContact = 'Please enter a 10 digit valid contact no !';
+    if (this.infoForm.get('contactNo')?.hasError('required')) this.errorMessageContact = 'You must enter a value';
+    else if (this.infoForm.get('contactNo')?.invalid) this.errorMessageContact = 'Please enter a 10 digit valid contact no !';
     else this.errorMessageContact = '';
   }
   onCheck() {

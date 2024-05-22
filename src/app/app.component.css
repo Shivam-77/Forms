@@ -1,32 +1,48 @@
 
+.root{
+  background: linear-gradient(#e66465, #9198e5);
+}
 .container {
-  height: 700px;
+  height: 600px;
   width: 600px;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  background-color: #5289cc;
-  
+ background-color: rgba(255, 255, 255, 0.6);
+
+  border: solid #249cb1;
+  border-width: 2px 2px 2px;
+  border-radius: 4px;
 }
 div {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom:10px;
 }
 mat-form-field {
   width: 90%;
   align-items: center;
-  background-color: mediumslateblue;
   margin-left: 20px;
+  height: 70px;
 }
 .button{
   margin-left: 40%;
-  margin-top: 40px;;
+  margin-top: 20px;;
 }
 mat-radio-group{
   margin-left:20px;
+  
 }
-p{
-  color: aliceblue;
+mat-label,label{
+  color: rgb(8, 132, 170);
 }
+p,span,option,mat-hint{
+  color: rgb(24, 144, 223);
+}
+option{
+  background-color: rgb(17, 147, 156);
+  
+}
+
+
 
